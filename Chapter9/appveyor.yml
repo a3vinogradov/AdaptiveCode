@@ -1,0 +1,52 @@
+image: Visual Studio 2015 
+before_build:
+ - nuget restore ch9-code-contracts-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-code-contracts-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-code-contracts-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-base\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-basis\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-pre-conditions-are-inherited\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-pre-conditions-strategy-cannot-inherit\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-lsp-protected-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-simple-data-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-simple-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-contracts-simple-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-lsp-generic-contravariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-lsp-generic-covariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-lsp-invariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-lsp-subtype-contravariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-lsp-subtype-covariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-lsp-variance-basis\Ch7-LspVariance\Ch7-LspVariance.sln
+ - nuget restore ch9-pre-conditions-calculate-shipping\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-pre-conditions-guard-clause-more-context\Ch7-Contracts\Ch7-Contracts.sln
+ - nuget restore ch9-pre-conditions-more-guard-clauses\Ch7-Contracts\Ch7-Contracts.sln
+
+ 
+build_script:
+ - msbuild ch9-code-contracts-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-code-contracts-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-code-contracts-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-base\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-basis\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-pre-conditions-are-inherited\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-pre-conditions-strategy-cannot-inherit\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-lsp-protected-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-simple-data-invariants\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-simple-post-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-contracts-simple-pre-conditions\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-lsp-generic-contravariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-lsp-generic-covariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-lsp-invariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-lsp-subtype-contravariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-lsp-subtype-covariance\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-lsp-variance-basis\Ch7-LspVariance\Ch7-LspVariance.sln
+ - msbuild ch9-pre-conditions-calculate-shipping\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-pre-conditions-guard-clause-more-context\Ch7-Contracts\Ch7-Contracts.sln
+ - msbuild ch9-pre-conditions-more-guard-clauses\Ch7-Contracts\Ch7-Contracts.sln
+ 

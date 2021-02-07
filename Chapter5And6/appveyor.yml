@@ -1,0 +1,54 @@
+image: Visual Studio 2015 
+before_build:
+ - nuget restore ch5-ch6-a-more-complex-unit-test\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-adding-setup-method\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-arrange-the-preconditions\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-assert-the-expectations\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-mocking-with-fakes\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-mocking-with-stubs\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-new-account-type-reward\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-new-account-type-standard\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-perform-the-testable-act\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-refactoring-base\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-refactoring-creating-account-type-subclasses\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-refactoring-replace-constructor-with-factory-class\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-refactoring-replace-constructor-with-factory-method\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-refactoring-replace-inheritance-with-delegation\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-refactoring-replace-magic-numbers-with-constants\Refactoring\Refactoring.sln
+ - nuget restore ch5-ch6-tdd-correct-implementation-of-addtransaction\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-tdd-initial-implementation\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-tdd-opening-balance-unit-test\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-tdd-second-implementation-of-addtransaction-test\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-tdd-the-absolutely-final-and-correct-implementation-of-addtransaction-honest\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-tdd-yet-another-unit-test\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-testing-account-method-throws\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-testing-account-not-found\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-testing-account-service-constructor\UnitTesting\UnitTesting.sln
+ - nuget restore ch5-ch6-testing-to-fix-bugs\UnitTesting\UnitTesting.sln
+
+build_script:
+ - msbuild ch5-ch6-a-more-complex-unit-test\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-adding-setup-method\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-arrange-the-preconditions\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-assert-the-expectations\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-mocking-with-fakes\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-mocking-with-stubs\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-new-account-type-reward\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-new-account-type-standard\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-perform-the-testable-act\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-refactoring-base\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-refactoring-creating-account-type-subclasses\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-refactoring-replace-constructor-with-factory-class\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-refactoring-replace-constructor-with-factory-method\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-refactoring-replace-inheritance-with-delegation\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-refactoring-replace-magic-numbers-with-constants\Refactoring\Refactoring.sln
+ - msbuild ch5-ch6-tdd-correct-implementation-of-addtransaction\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-tdd-initial-implementation\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-tdd-opening-balance-unit-test\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-tdd-second-implementation-of-addtransaction-test\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-tdd-the-absolutely-final-and-correct-implementation-of-addtransaction-honest\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-tdd-yet-another-unit-test\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-testing-account-method-throws\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-testing-account-not-found\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-testing-account-service-constructor\UnitTesting\UnitTesting.sln
+ - msbuild ch5-ch6-testing-to-fix-bugs\UnitTesting\UnitTesting.sln

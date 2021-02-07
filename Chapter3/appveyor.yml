@@ -1,0 +1,9 @@
+image: Visual Studio 2015 
+before_build:
+  #- nuget restore ch3-cross-cutting-concerns\CrossCuttingConcerns\CrossCuttingConcerns.sln
+  - nuget restore ch3-restful-service\RestService\RestService.sln
+  - nuget restore ch3-service-discovery\ServiceDiscoverySample\ServiceDiscoverySample.sln
+build_script:
+  #- msbuild ch3-cross-cutting-concerns\CrossCuttingConcerns\CrossCuttingConcerns.sln
+  - msbuild ch3-restful-service\RestService\RestService.sln
+  - msbuild ch3-service-discovery\ServiceDiscoverySample\ServiceDiscoverySample.sln

@@ -1,0 +1,83 @@
+image: Visual Studio 2015 
+before_build:
+  - nuget restore ch4-async-decorator\TheInterface\TheInterface.sln
+  - nuget restore ch4-async-decorator-first-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-clr-duck-typing-support\TheInterface\TheInterface.sln
+  - nuget restore ch4-composite-pattern\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-code-contracts\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-code-contracts-constructor\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-debug-assert\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-implicit\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-manual\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-person\TheInterface\TheInterface.sln
+  - nuget restore ch4-contracts-static-class\TheInterface\TheInterface.sln
+  - nuget restore ch4-decorating-properties-and-events\TheInterface\TheInterface.sln
+  - nuget restore ch4-decorator-pattern\TheInterface\TheInterface.sln
+  - nuget restore ch4-diamond-inheritance-problem\TheInterface\TheInterface.sln
+  - nuget restore ch4-duck-typing\TheInterface\TheInterface.sln
+  - nuget restore ch4-duck-typing-using-dlr\TheInterface\TheInterface.sln
+  - nuget restore ch4-duck-typing-using-impromptu-interface\TheInterface\TheInterface.sln
+  - nuget restore ch4-fluent-interface\TheInterface\TheInterface.sln
+  - nuget restore ch4-interface-basis\TheInterface\TheInterface.sln
+  - nuget restore ch4-interface-definition\TheInterface\TheInterface.sln
+  - nuget restore ch4-lazy-client\TheInterface\TheInterface.sln
+  - nuget restore ch4-lazy-decorator\TheInterface\TheInterface.sln
+  - nuget restore ch4-logging-decorator\TheInterface\TheInterface.sln
+  - nuget restore ch4-mixins-using-extension-methods\TheInterface\TheInterface.sln
+  - nuget restore ch4-mixins-using-remotion-remix\TheInterface\TheInterface.sln
+  - nuget restore ch4-null-object-pattern\TheInterface\TheInterface.sln
+  - nuget restore ch4-null-object-pattern-isnull-anti-pattern\TheInterface\TheInterface.sln
+  - nuget restore ch4-null-object-pattern-isnull-obsolescence\TheInterface\TheInterface.sln
+  - nuget restore ch4-predicate-decorator\TheInterface\TheInterface.sln
+  - nuget restore ch4-predicate-decorator-branching-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-predicate-decorator-first-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-predicate-decorator-second-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-profiling-decorate-second-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-profiling-decorator\TheInterface\TheInterface.sln
+  - nuget restore ch4-profiling-decorator-added-stopwatch\TheInterface\TheInterface.sln
+  - nuget restore ch4-profiling-decorator-first-refactor\TheInterface\TheInterface.sln
+  - nuget restore ch4-strategy-pattern\TheInterface\TheInterface.sln
+  - nuget restore ch4-strategy-pattern-instead-of-switch\TheInterface\TheInterface.sln
+  - nuget restore ch4-ubiquitous-logging\TheInterface\TheInterface.sln
+  - nuget restore ch4-windows-forms-mvp-implicit-interface-implementation\TheInterface\TheInterface.sln
+build_script:
+  - msbuild ch4-async-decorator\TheInterface\TheInterface.sln
+  - msbuild ch4-async-decorator-first-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-clr-duck-typing-support\TheInterface\TheInterface.sln
+  - msbuild ch4-composite-pattern\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-code-contracts\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-code-contracts-constructor\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-debug-assert\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-implicit\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-manual\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-person\TheInterface\TheInterface.sln
+  - msbuild ch4-contracts-static-class\TheInterface\TheInterface.sln
+  - msbuild ch4-decorating-properties-and-events\TheInterface\TheInterface.sln
+  - msbuild ch4-decorator-pattern\TheInterface\TheInterface.sln
+  - msbuild ch4-diamond-inheritance-problem\TheInterface\TheInterface.sln
+  - msbuild ch4-duck-typing\TheInterface\TheInterface.sln
+  - msbuild ch4-duck-typing-using-dlr\TheInterface\TheInterface.sln
+  - msbuild ch4-duck-typing-using-impromptu-interface\TheInterface\TheInterface.sln
+  - msbuild ch4-fluent-interface\TheInterface\TheInterface.sln
+  - msbuild ch4-interface-basis\TheInterface\TheInterface.sln
+  - msbuild ch4-interface-definition\TheInterface\TheInterface.sln
+  - msbuild ch4-lazy-client\TheInterface\TheInterface.sln
+  - msbuild ch4-lazy-decorator\TheInterface\TheInterface.sln
+  - msbuild ch4-logging-decorator\TheInterface\TheInterface.sln
+  - msbuild ch4-mixins-using-extension-methods\TheInterface\TheInterface.sln
+  - msbuild ch4-mixins-using-remotion-remix\TheInterface\TheInterface.sln
+  - msbuild ch4-null-object-pattern\TheInterface\TheInterface.sln
+  - msbuild ch4-null-object-pattern-isnull-anti-pattern\TheInterface\TheInterface.sln
+  - msbuild ch4-null-object-pattern-isnull-obsolescence\TheInterface\TheInterface.sln
+  - msbuild ch4-predicate-decorator\TheInterface\TheInterface.sln
+  - msbuild ch4-predicate-decorator-branching-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-predicate-decorator-first-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-predicate-decorator-second-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-profiling-decorate-second-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-profiling-decorator\TheInterface\TheInterface.sln
+  - msbuild ch4-profiling-decorator-added-stopwatch\TheInterface\TheInterface.sln
+  - msbuild ch4-profiling-decorator-first-refactor\TheInterface\TheInterface.sln
+  - msbuild ch4-strategy-pattern\TheInterface\TheInterface.sln
+  - msbuild ch4-strategy-pattern-instead-of-switch\TheInterface\TheInterface.sln
+  - msbuild ch4-ubiquitous-logging\TheInterface\TheInterface.sln
+  - msbuild ch4-windows-forms-mvp-implicit-interface-implementation\TheInterface\TheInterface.sln
